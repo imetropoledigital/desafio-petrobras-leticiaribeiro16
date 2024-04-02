@@ -15,4 +15,4 @@ function removeOutlier(dados){
     return dados.filter(valor => Math.abs(valor - media) <= 2 * desvioPadrao);
 }
 
-module.exports = removeOutlier
+module.exports = removeOutlier;
