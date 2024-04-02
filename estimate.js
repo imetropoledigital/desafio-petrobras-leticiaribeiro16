@@ -1,4 +1,3 @@
-
 /**
  * Estima a vazão mássica
  * @param {*} d1 Diâmetro da seção 1
@@ -8,8 +7,10 @@
  * @param {*} p2 Pressão na seção 2
  * @returns Vazão mássica
  */
+
 function estimate(d1, d2, ro, p1, p2){
-   return -1
+   const qm = ( (1 / Math.sqrt( (1 - (Math.pow( (d2/d1), 4))) )) * (Math.PI * (Math.pow( (d2) , 2)/4)) * (Math.sqrt((2 * ro * (p1 - p2))) ) );
+   return qm;
 }
 
-module.exports = estimate
+module.exports = estimate;
