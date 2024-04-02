@@ -8,10 +8,10 @@ function integrate(data){
     let total = 0;
     for(let i = 0; i < data.length - 1; i++) {
         let dx = data[i+1].x - data[i].x;
-        let avgHeight = (data[i].y + data[i+1].y) / 2;
-        total += dx * avgHeight;
+        let alturaMedia = (data[i].y + data[i+1].y) / 2;
+        total += dx * alturaMedia;
     }
     return total;
 }
  
- module.exports = integrate
+ module.exports = integrate;
